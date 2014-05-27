@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/startLinearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal|bottom"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/buttonsContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:gravity="left"
+        android:orientation="vertical"
+        android:paddingLeft="0dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/connect_btn"
+                android:layout_width="165dp"
+                android:layout_height="60dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/rounded_corner_right_btn"
+                android:drawableLeft="@drawable/live"
+                android:shadowColor="#555555"
+                android:shadowDx="2"
+                android:shadowDy="2"
+                android:shadowRadius="2"
+                android:text="@string/connect_msg"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/live_expl_tv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center_vertical"
+	            android:shadowColor="#000000"
+	            android:shadowDx="1"
+	            android:shadowDy="1"
+	            android:shadowRadius="1"
+	            android:textColor="#23cb02"
+                android:text="@string/live_expl"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/download_history_btn"
+                android:layout_width="140dp"
+                android:layout_height="55dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/rounded_corner_right_btn"
+                android:drawableLeft="@drawable/synchro"
+                android:drawablePadding="4dp"
+                android:shadowColor="#555555"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="1"
+                android:text="@string/download_history_msg"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/synchro_expl_tv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center_vertical"
+	            android:shadowColor="#000000"
+	            android:shadowDx="1"
+	            android:shadowDy="1"
+	            android:shadowRadius="1"
+	            android:textColor="#23cb02"
+                android:text="@string/synchro_exp"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/offline_btn"
+                android:layout_width="140dp"
+                android:layout_height="55dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/rounded_corner_right_btn"
+                android:drawableLeft="@drawable/browse"
+                android:drawablePadding="4dp"
+                android:shadowColor="#555555"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="1"
+                android:text="@string/offline_msg"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/browse_expl_tv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center_vertical"
+	            android:shadowColor="#000000"
+	            android:shadowDx="1"
+	            android:shadowDy="1"
+	            android:shadowRadius="1"
+	            android:textColor="#23cb02"
+                android:text="@string/browse_exp"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/options_btn"
+                android:layout_width="140dp"
+                android:layout_height="55dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/rounded_corner_right_btn"
+                android:drawableLeft="@drawable/settings"
+                android:drawablePadding="4dp"
+                android:shadowColor="#555555"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="1"
+                android:text="@string/options_msg"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/settings_expl_tv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center_vertical"
+	            android:shadowColor="#000000"
+	            android:shadowDx="1"
+	            android:shadowDy="1"
+	            android:shadowRadius="1"
+	            android:textColor="#23cb02"
+                android:text="@string/settings_exp"
+                android:visibility="gone" />
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="visible" >
+
+            <Button
+                android:id="@+id/activate_btn"
+                android:layout_width="140dp"
+                android:layout_height="55dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/rounded_corner_right_btn"
+                android:drawableLeft="@drawable/activated_off"
+                android:drawablePadding="4dp"
+                android:shadowColor="#555555"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="1"
+                android:text="@string/activate_msg"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/activate_expl_tv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center_vertical"
+	            android:shadowColor="#000000"
+	            android:shadowDx="1"
+	            android:shadowDy="1"
+	            android:shadowRadius="1"
+	            android:textColor="#23cb02"
+                android:text="@string/register_activate_exp"
+                android:visibility="gone" />
+        </LinearLayout>        
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="3dp"
+        android:gravity="bottom"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/credits_btn"
+            android:layout_width="130dp"
+            android:layout_height="45dp"
+            android:background="@drawable/rounded_corner_right_btn"
+            android:drawableLeft="@drawable/credits"
+            android:drawablePadding="4dp"
+            android:shadowColor="#555555"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowRadius="1"
+            android:text="@string/credits_msg"
+            android:textSize="16sp"
+            android:textStyle="normal" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+        </LinearLayout>
+        
+        <CheckBox
+            android:id="@+id/showHintsChBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:shadowColor="#000000"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowRadius="1"
+            android:text="@string/show_hints_str"
+            android:textColor="#23cb02"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

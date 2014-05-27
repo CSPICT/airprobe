@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">AirProbe</string> 
+    <string name="connect_msg">Live Track</string>
+    <string name="download_history_msg">Synchro</string>
+	<string name="offline_msg">Browse</string>
+	<string name="options_msg">Settings</string>
+	<string name="activate_msg">Activate!</string>
+	<string name="activated_msg">Activated</string>
+	<string name="credits_msg">Credits</string>
+	
+	<string name="no_hist_recs">No history records to download or connection error: please restart the sensor box</string>
+	
+	<string name="live_expl">Start data recording with sensor box</string>
+	<string name="synchro_exp">Download history from sensor box and upload data to server</string>
+	<string name="browse_exp">Browse collected data</string>
+	<string name="settings_exp">Configure AirProbe</string>
+	<string name="show_hints_str">Show hints</string>
+	
+	<string name="account_wizard_title">Account wizard</string>
+	<string name="account_wizard_exp1">To use AirProbe, you can create an account for login and activate it. AirProbe will mantain your credentials and will not ask them anymore (to deactivate AirProbe account and send data anonymously, go to \'Settings\' page)</string>
+	<string name="create_account">Create an account on cs.everyaware.eu site project if you don\'t have it</string>
+	<string name="activate_account">Activate the account</string>
+	<string name="start_proc_str">Start procedure >></string>
+	
+	<string name="register_str">Create a new account</string>
+	<string name="i_have_account_str">No thanks, I have an account</string>
+	<string name="activate_str">Activate account</string>
+	<string name="register_exp">Register a new account if you have not already created one: </string>
+	<string name="activate_exp">Activate your existing account to let the server to associate with you data sent by AirProbe:</string>
+	<string name="register_activate_exp">Register on Everyaware site and activate AirProbe with your credentials</string>
+	<string name="username_psw_exp">You\'ve choosen to activate your account. This allow the server to associate data with you. Please, type below your credentials (to deactivate AirProbe account and send data anonymously, go to \'Settings\' page).</string>
+	<string name="username_str">Username (email):</string>
+	<string name="password_str">Password:</string>
+	<string name="activation_successfull">Activation successfully completed</string>
+	<string name="error_during_activation">Error during activation</string>
+	<string name="your_email_str">Your email here</string>
+	<string name="your_password_str">Your password</string>
+	<string name="fill_both_field_str">Please, fill both username and password fields</string>
+	<string name="deactivation_confirmation">Perform logout to send data anonymously? You can reactivate AirProbe from activation wizard</string>
+	
+    <string name="install_google_maps_string">Install Google Maps V2</string>
+    <string name="alert_dialog_no_internet">No Internet connection available</string>
+    <string name="alert_dialog_no_bt">Bluetooth is not available!</string>
+    <string name="alert_dialog_enable_bt">Enable Bluetooth?</string>
+    <string name="alert_dialog_ok">OK</string>
+    <string name="alert_dialog_cancel">Cancel</string>
+    <string name="run_discovery_msg">Running discovery...</string>
+    <string name="complete_discovery_msg">Discovery completed</string>
+    <string name="cancel_discovery">Cancel discovery?</string>
+    <string name="alert_dialog_again">Search again</string>
+    <string name="alert_dialog_conn_failed">Connection failed!</string>
+    <string name="alert_dialog_conn_attempts_failed">Attempts to reconnect failed! Try again?</string>
+    <string name="alert_dialog_close_app">Close and back to desktop?</string>
+    <string name="alert_dialog_use_it">Use it</string>
+    <string name="alert_dialog_create_new">Create new</string>
+    <string name="alert_dialog_old_session_id_found">Old session id found</string>
+    <string name="alert_dialog_no_records_received">No records received during last minute</string>
+    <string name="alert_dialog_wait">Wait</string>
+    <string name="alert_dialog_close">Exit</string>
+    <string name="progress_dialog_please_wait">Downloading Black Carbon data...</string>
+    <string name="alert_dialog_nobc">Black Carbon data not available in this area</string>
+    <string name="alert_dialog_download_error">Error on downloading data</string>
+    <string name="alert_dialog_sensorbox_mac_not_read">Sensor box MAC address not read. It is necessary to read it. Please restart the app!</string>
+    <string name="continue_not_recommended">Continue (not recommended)</string>
+    
+    <string name="ten_min_msg">10min</string>
+    <string name="all_msg">all</string>
+    <string name="track_msg">My track</string>
+    <string name="community_msg">Community</string>
+    <string name="insert_msg">A</string>
+    <string name="type_annotation_msg">Please type an annotation</string>
+    <string name="send_msg">SEND</string>
+    <string name="share_msg">Share also on:</string>
+    <string name="facebook_label">Facebook</string>
+    <string name="twitter_label">Twitter</string>
+    <string name="annotation_insertion">User annotation insertion</string>
+    
+    <string name="switch_to_track_map_dialog">Switch to track map?</string> 
+    <string name="switch_to_community_map_dialog">Switch to community map?</string>
+    
+    <string name="dev_gps_status_msg">Device GPS status: </string>
+    <string name="bt_conn_status_msg">Bluetooth status: </string>
+    <string name="login_facebook_text">Log on Facebook</string>
+    <string name="login_twitter_text">Log on Twitter</string>
+    <string name="logout_facebook_text">Logout from Facebook</string>
+    <string name="logout_twitter_text">Logout from Twitter</string>
+    
+    <string name="track_length_btn_text">Press this button to change the length, in minutes, of the displayed track</string>
+    <string name="insert_ann_btn_text">Press this button to write a note</string>
+    <string name="camera_track_btn_text">Press this button to switch On/Off camera tracking</string>
+    <string name="share_btn_text">Press this button to log on Facebook and/or Twitter</string>
+    
+    <string name="new_data_icon_text">This icon lights when a new record is received from sensor box</string>
+    <string name="gps_status_icon_text">This icon shows if actual data contains gps coordinates or not. If yes, it also indicates if they are produced sensorbox, smartphone gps or network</string>
+    <string name="bt_status_icon_text">This icon shows if Bluetooth connection between smartphone and sensor box is working</string>
+    <string name="inter_upl_status_icon_text">This icon show if Internet connection is available and if data are currently uploading to server</string>
+
+    <string name="micrograms">&#181;g/m&#179;</string>
+    <string name="press_again_to_exit_msg">Press again to close AirProbe</string>
+    <string name="session_id_text">Session Id</string>     
+    <string name="track_length_text">Track Length</string>
+    
+    <string name="save_preferred_box_msg">Remember the choice</string>
+    <string name="error_connection_msg">Error during connection. Is SensorBox powered ON?</string>
+    
+    <string name="stop_down_upl">Stop</string>
+    <string name="co_txt">CO</string>
+    <string name="no2_txt">NO2</string>
+    <string name="voc_txt">VOC</string>
+    <string name="o3_txt">O3</string>
+    <string name="bc_txt">BC</string>
+    
+    <string name="wait_bc_show_value">Cumulative BC can be computed only when BC level becomes available</string>
+    
+    <string name="get_bc_levels">Get nearby BC levels</string>
+    
+    <string name="credits_app_desc">AirProbe is a collaborative app that helps you to measure air quality around you and raise your awareness.</string>
+	<string name="credits_mobile_dev">MOBILE DEVELOPMENT BY </string>
+	<string name="credits_note">NOTE  The recorded pollutant levels are approximate.</string>
+	<string name="credits_additional_info">For additional information governing this application please refer to cs.everyaware.eu →</string>
+	<string name="credits_isi">ISI Foundation →</string>
+	<string name="credits_sapienza">Sapienza University →</string>
+	<string name="credits_csp">CSP →</string>
+	<string name="credits_l3s">L3S Research Center →</string>
+	<string name="credits_vito">Vito →</string>
+	<string name="credits_ucl">UCL Extreme Citizen Science →</string>	
+	
+	<string name="recovery_mode_message">Use this functionaly very carefully. If you have trouble uploading records to server (upload bars don\'t progress),
+	    with this you can reset records to a not-uploaded state. This can cause to have duplicated data on server. Do you want to reset all
+	    records actually saved on AirProbe internal database to a not uploaded state, so the app can try to upload them again?</string>
+</resources>

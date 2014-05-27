@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <string-array name="map_optionmenu">  
+        <item name="track_length_choice" type="string">Track length</item>
+        <item name="options_choice" type="string">Options</item>
+        <item name="about_choice" type="string">About</item>
+        <item name="quit_choice" type="string">Quit</item>  
+    </string-array>
+    
+</resources>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="record_ages">
+        <item >24 hours (recommended)</item>
+        <item >6 hours</item>
+        <item >12 hours</item>
+        <item >36 hours</item>
+    </string-array>
+    
+    <string-array name="storeforw_frequencies">
+        <item >30 s (recommended)</item>
+        <item >1 s</item>
+        <item >15 s</item>
+        <item >60 s</item>
+        <item >5 m</item>
+    </string-array>
+    
+    <string-array name="download_history">
+        <item >On (recommended)</item>
+        <item >Off</item>
+    </string-array>
+    
+    <string-array name="network_type">
+        <item>Only Wifi networks (recommended)</item>
+        <item>Both Wifi and Mobile networks</item>
+    </string-array>
+    
+    <string-array name="network_provider">
+        <item >On (recommended)</item>
+        <item >Off</item>
+    </string-array>
+        
+    <string-array name="sliding_window_lengths">
+     	<item>30\'</item>
+        <item>1\'</item>
+        <item>5\'</item>
+        <item>15\'</item>
+    </string-array>
+    
+    <string-array name="use_phone_gps">
+        <item>Only if sensor box GPS data aren\'t available (to save battery life)</item>
+        <item>Always (override sensor box GPS data)</item>
+    </string-array>
+    
+    <string-array name="recover_records">
+        <item>Use this only if you have trouble in sending records to server (data uploading doesn\'t work)</item>
+    </string-array>
+</resources>

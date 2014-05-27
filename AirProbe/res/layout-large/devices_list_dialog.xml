@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/devices_list_linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+       
+	<ListView
+	    android:id="@+id/devices_listView"
+	    android:layout_width="match_parent"
+	    android:layout_height="200dp"
+	    android:padding="5dp" >
+
+	</ListView>
+
+	<CheckBox
+	    android:id="@+id/save_pref_chbox"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="@string/save_preferred_box_msg" />	
+	<LinearLayout
+	    android:id="@+id/linearLayout1"
+	    android:layout_width="match_parent"
+	    android:layout_height="50dp"
+	    android:gravity="center_horizontal|center_vertical"
+	    android:saveEnabled="true" >
+
+		<Button
+		    android:id="@+id/again_button"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:text="@string/alert_dialog_again"
+		    android:textSize="18dp" />
+
+		<Button
+		    android:id="@+id/cancel_button"
+		    android:layout_width="100dp"
+		    android:layout_height="wrap_content"
+		    android:text="@string/alert_dialog_cancel"
+		    android:textSize="18dp" />
+
+	</LinearLayout>
+
+</LinearLayout>

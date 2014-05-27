@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="140dp"
+    android:background="@drawable/custom_info_window"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <TextView
+		android:id="@+id/gps_point_info_textView"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text=""
+		android:textColor="#FFFFFF"
+		android:textSize="18dp"
+		android:background="#00000000"/>  
+
+</LinearLayout>

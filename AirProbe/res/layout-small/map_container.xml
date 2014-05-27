@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mapRelativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:baselineAligned="false"
+    android:orientation="vertical" >
+    
+	<com.google.android.gms.maps.MapView
+		android:id="@+id/mapView"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"/>
+
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:gravity="center_horizontal|center_vertical|top"
+	    android:padding="3dp" >
+
+	    <LinearLayout
+	        android:layout_width="wrap_content"
+	        android:layout_height="match_parent"
+	        android:orientation="vertical" >
+
+	        <Button
+	            android:id="@+id/followCameraBtn"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:background="@drawable/follow_camera_button" />
+
+	        <Button
+	            android:id="@+id/trackLengthBtn"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginTop="10dp"
+	            android:background="@drawable/five_mins_button" />
+	    </LinearLayout>
+
+	    <LinearLayout
+	        android:id="@+id/bcLinearLayout"
+	        android:layout_width="wrap_content"
+	        android:layout_height="match_parent"
+	        android:layout_weight="1"
+	        android:gravity="center_horizontal|center_vertical|top"
+	        android:orientation="vertical" >
+
+	        <TextView
+	            android:id="@+id/aqiTv"
+	            android:layout_width="match_parent"
+	            android:layout_height="35dp"
+	            android:layout_marginLeft="15dp"
+	            android:layout_marginRight="15dp"
+	            android:layout_marginTop="5dp"
+	            android:gravity="center_horizontal|center_vertical"
+	            android:shadowColor="#222222"
+	            android:shadowDx="2"
+	            android:shadowDy="2"
+	            android:shadowRadius="2"
+	            android:text=""
+	            android:textColor="#ffffff"
+	            android:textSize="16sp"
+	            android:visibility="gone" />
+
+	        <Button
+	            android:id="@+id/getBcLevelsBtn"
+	            android:layout_width="wrap_content"
+	            android:layout_height="35dp"
+	            android:text="@string/get_bc_levels"
+	            android:textSize="10sp"
+	            android:visibility="gone" />
+
+	        <LinearLayout
+	            android:id="@+id/spectrumLinearLayout"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="15dp"
+	            android:layout_marginRight="15dp"
+	            android:visibility="gone" >
+
+	            <TextView
+	                android:id="@+id/level1Tv"
+	                android:layout_width="wrap_content"
+	                android:layout_height="10dp"
+	                android:layout_weight="1"
+	                android:text="" />
+
+	            <TextView
+	                android:id="@+id/level2Tv"
+	                android:layout_width="wrap_content"
+	                android:layout_height="10dp"
+	                android:layout_weight="1"
+	                android:text="" />
+	            
+	            <TextView
+	                android:id="@+id/level3Tv"
+	                android:layout_width="wrap_content"
+	                android:layout_height="10dp"
+	                android:layout_weight="1"
+	                android:text="" />
+	            
+	            <TextView
+	                android:id="@+id/level4Tv"
+	                android:layout_width="wrap_content"
+	                android:layout_height="10dp"
+	                android:layout_weight="1"
+	                android:text="" />
+
+	            <TextView
+	                android:id="@+id/level5Tv"
+	                android:layout_width="wrap_content"
+	                android:layout_height="10dp"
+	                android:layout_weight="1"
+	                android:text="" />
+	            
+	            <TextView
+	                android:id="@+id/level6Tv"
+	                android:layout_width="wrap_content"
+	                android:layout_height="10dp"
+	                android:layout_weight="1"
+	                android:text="" />
+	
+            <TextView
+	                android:id="@+id/level7Tv"
+	                android:layout_width="wrap_content"
+	                android:layout_height="10dp"
+	                android:layout_weight="1"
+	                android:text="" />
+		            	            	            	            
+	        </LinearLayout>
+
+	    </LinearLayout>
+
+	    <LinearLayout
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:gravity="center_horizontal|center_vertical"
+	        android:orientation="vertical" >
+
+	        <Button
+	            android:id="@+id/insertAnnBtn"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginBottom="10dp"
+	            android:background="@drawable/insert_ann_button" />
+
+	        <Button
+	            android:id="@+id/shareBtn"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginTop="0dp"
+	            android:background="@drawable/share_button" />
+	    </LinearLayout>
+	</LinearLayout>
+
+	<LinearLayout
+	    android:id="@+id/zoomLinearLayout"
+	    android:layout_width="match_parent"
+	    android:layout_height="50dp"
+	    android:layout_above="@id/border2_linearLayout"
+	    android:gravity="center_horizontal|center_vertical" >
+
+		<Button
+		    android:id="@+id/zoomOutBtn"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:background="@drawable/zoom_out_button"/>
+
+		<Button
+		    android:id="@+id/zoomInBtn"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:background="@drawable/zoom_in_button"/>
+
+	</LinearLayout>
+		
+	<LinearLayout
+		android:id="@+id/border2_linearLayout"
+		android:layout_width="match_parent"
+		android:layout_height="2dp"
+		android:layout_alignTop="@id/bottomLinearLayout"
+		android:background="@drawable/horizontal_gradient" />
+		    
+	<LinearLayout
+	    android:id="@+id/bottomLinearLayout"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentBottom="true"	    
+	    android:gravity="center_horizontal|center_vertical"
+	    android:orientation="vertical">
+
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="50dp"
+	        android:orientation="horizontal"
+	        android:gravity="left|center_vertical"
+	        android:background="@drawable/grey_horizontal_gradient"
+	        android:padding="4dp">
+	        
+	       	<Button
+			    android:id="@+id/startStopBtn"
+			    android:layout_width="40dp"
+			    android:layout_height="40dp"
+			    android:background="@drawable/zoom_out_button"/>
+	       	
+	       	<LinearLayout
+	       	    android:layout_width="match_parent"
+	       	    android:layout_height="match_parent"
+	       	    android:orientation="vertical">
+	       	    
+	       	    <TextView
+		       	    android:id="@+id/bcCumulativeTv"
+		       	    android:layout_width="wrap_content"
+		       	    android:layout_height="wrap_content"	
+		       	    android:paddingLeft="5dp"
+		       	    android:gravity="left|center_vertical"
+		       	    android:shadowColor="#ffffff"
+		       	    android:shadowRadius="1"		       	    
+		       	    android:textColor="#000000"
+		       	    android:textSize="14dp"/>
+	       	    
+	       	    <TextView
+		       	    android:id="@+id/timeLeftTv"
+		       	    android:layout_width="wrap_content"
+		       	    android:layout_height="wrap_content"	
+		       	    android:paddingLeft="5dp"
+		       	    android:gravity="left|center_vertical"
+		       	    android:shadowColor="#ffffff"
+		       	    android:shadowRadius="1"		       	    
+		       	    android:textColor="#000000"
+		       	    android:textSize="12dp"/>
+	       	</LinearLayout>
+		</LinearLayout>
+	    
+	    <LinearLayout
+		    android:id="@+id/iconsLinearLayout"
+		    android:layout_width="match_parent"
+		    android:layout_height="50dp"
+		    android:background="#bbddddaa"
+		    android:gravity="center_horizontal|center_vertical"
+		    android:orientation="horizontal"
+		    android:padding="4dp" >
+	    
+		    <ImageView
+		        android:id="@+id/newPinIv"
+		        android:layout_width="44dp"
+		        android:layout_height="44dp"
+		        android:layout_marginRight="15dp"
+		        android:adjustViewBounds="true"
+		        android:scaleType="fitCenter"
+		        android:src="@drawable/new_pin"
+		        android:visibility="invisible" />
+	
+		    <ImageView
+		        android:id="@+id/gpsStatusIv"
+		        android:layout_width="44dp"
+		        android:layout_height="44dp"
+		        android:layout_marginRight="15dp"
+		        android:adjustViewBounds="true"
+		        android:scaleType="fitCenter" />
+	
+		    <ImageView
+		        android:id="@+id/btStatusIv"
+		        android:layout_width="44dp"
+		        android:layout_height="44dp"
+		        android:layout_marginRight="15dp"
+		        android:adjustViewBounds="true"
+		        android:scaleType="fitCenter" />
+	
+		    <ImageView
+		        android:id="@+id/interUplStatusIv"
+		        android:layout_width="44dp"
+		        android:layout_height="44dp"
+		        android:adjustViewBounds="true"
+		        android:scaleType="fitCenter" />
+		</LinearLayout>	    
+	</LinearLayout>
+			    
+</RelativeLayout>

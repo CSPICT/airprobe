@@ -1,0 +1,492 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#cdcdcd" >
+
+	<LinearLayout
+	    android:id="@+id/monitorLinearLayout"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:orientation="vertical">
+
+	    <LinearLayout
+	        android:id="@+id/graphTitlesLinearLayout"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="10dp"
+	        android:orientation="horizontal" >
+
+	        <TextView
+	            android:id="@+id/sessionIdTv"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="1"
+	            android:gravity="center_horizontal|center_vertical"
+	            android:shadowColor="#ffffff"
+	            android:shadowDx="1"
+	            android:shadowDy="1"
+	            android:shadowRadius="1"
+	            android:text="SENSOR BOX"
+	            android:textColor="#000000"
+	            android:textSize="14dp"
+	            android:textStyle="bold" />
+
+	        <TextView
+	            android:id="@+id/co_1_color"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="1"
+	            android:gravity="center_horizontal|center_vertical"
+	            android:shadowColor="#ffffff"
+	            android:shadowDx="1"
+	            android:shadowDy="1"
+	            android:shadowRadius="1"
+	            android:text="AIR PROBE"
+	            android:textColor="#000000"
+	            android:textSize="14dp"
+	            android:textStyle="bold" />
+	    </LinearLayout>
+	    	        
+	    <LinearLayout
+	        android:id="@+id/graphsLinearLayout"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal" >
+
+	        <LinearLayout
+	            android:id="@+id/hi_chart"
+	            android:layout_width="match_parent"
+	            android:layout_height="140dp"
+	            android:layout_weight="1"
+	            android:orientation="vertical" />
+
+	        <LinearLayout
+	            android:id="@+id/db_chart"
+	            android:layout_width="match_parent"
+	            android:layout_height="140dp"
+	            android:layout_weight="1"
+	            android:orientation="vertical" />
+	    </LinearLayout>
+	    
+	    <LinearLayout
+	        android:id="@+id/legendsLinearLayout"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal" >
+	
+	        <LinearLayout
+	            android:id="@+id/hi_chart_legend"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="1"
+	            android:orientation="vertical">
+
+	            <LinearLayout
+	                android:layout_width="match_parent"
+	                android:layout_height="wrap_content"
+	                android:gravity="center_horizontal|left"
+	                android:orientation="vertical"
+	                android:paddingLeft="20dp" >
+
+	                <LinearLayout
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="match_parent"
+	                    android:layout_marginBottom="5dp"
+	                    android:gravity="center_horizontal|center_vertical"
+	                    android:orientation="horizontal" >
+
+	                    <TextView
+	                        android:id="@+id/colorNoHistoryTv"
+	                        android:layout_width="10dp"
+	                        android:layout_height="10dp"
+	                        android:layout_marginRight="3dp"
+	                        android:background="#838383" />
+
+	                    <TextView
+	                        android:id="@+id/noHistoryTv"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:shadowColor="#ffffff"
+						    android:shadowDx="1"
+						    android:shadowDy="1"
+						    android:shadowRadius="1"	                        
+	                        android:text="No history records"
+	                        android:textColor="#000000"
+	                        android:textSize="12sp" />
+	                </LinearLayout>
+	                
+	                <LinearLayout
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="match_parent"
+	                    android:layout_marginBottom="5dp"
+	                    android:gravity="center_horizontal|center_vertical"
+	                    android:orientation="horizontal" >
+
+	                    <TextView
+	                        android:id="@+id/colorHistoryTv"
+	                        android:layout_width="10dp"
+	                        android:layout_height="10dp"
+	                        android:layout_marginRight="3dp"
+	                        android:background="#ff6c0a" />
+
+	                    <TextView
+	                        android:id="@+id/historyTv"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:shadowColor="#ffffff"
+						    android:shadowDx="1"
+						    android:shadowDy="1"
+						    android:shadowRadius="1"	                        
+	                        android:text="History records"
+	                        android:textColor="#000000"
+	                        android:textSize="12sp" />
+	                </LinearLayout>
+
+	                <LinearLayout
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="match_parent"
+	                    android:gravity="center_horizontal|center_vertical" 
+	                    android:orientation="horizontal" >
+
+	                    <TextView
+	                        android:id="@+id/colorDownHistoryTv"
+	                        android:layout_width="10dp"
+	                        android:layout_height="10dp"
+	                        android:layout_marginRight="3dp"
+	                        android:background="#62c51a" />
+
+	                    <TextView
+	                        android:id="@+id/downHistoryTv"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:shadowColor="#ffffff"
+						    android:shadowDx="1"
+						    android:shadowDy="1"
+						    android:shadowRadius="1"
+	                        android:text="Downloaded hist. rec."
+	                        android:textColor="#000000"
+	                        android:textSize="12sp" />
+	                </LinearLayout>
+	            </LinearLayout>
+	            
+	        </LinearLayout>	            
+	
+	        <LinearLayout
+	            android:id="@+id/db_chart_legend"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="1"
+	            android:gravity="center_vertical|left"
+	            android:orientation="horizontal" >
+
+	            <LinearLayout
+	                android:layout_width="match_parent"
+	                android:layout_height="wrap_content"
+	                android:gravity="center_horizontal|left"
+	                android:orientation="vertical"
+	                android:paddingLeft="20dp" >
+
+	                <LinearLayout
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="match_parent"
+	                    android:layout_marginBottom="5dp"
+	                    android:gravity="center_horizontal|center_vertical"
+	                    android:orientation="horizontal" >
+
+	                    <TextView
+	                        android:id="@+id/colorTotalTv"
+	                        android:layout_width="10dp"
+	                        android:layout_height="10dp"
+	                        android:layout_marginRight="3dp"
+	                        android:background="#ff6c0a" />
+
+	                    <TextView
+	                        android:id="@+id/totalTv"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:shadowColor="#ffffff"
+						    android:shadowDx="1"
+						    android:shadowDy="1"
+						    android:shadowRadius="1"	                        
+	                        android:text="Not uploaded records"
+	                        android:textColor="#000000"
+	                        android:textSize="12sp" />
+	                </LinearLayout>
+
+	                <LinearLayout
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="match_parent"
+	                    android:gravity="center_horizontal|center_vertical" 
+	                    android:orientation="horizontal" >
+
+	                    <TextView
+	                        android:id="@+id/colorUploadedTv"
+	                        android:layout_width="10dp"
+	                        android:layout_height="10dp"
+	                        android:layout_marginRight="3dp"
+	                        android:background="#62c51a" />
+
+	                    <TextView
+	                        android:id="@+id/uploadedTv"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:shadowColor="#ffffff"
+						    android:shadowDx="1"
+						    android:shadowDy="1"
+						    android:shadowRadius="1"
+	                        android:text="Uploaded records"
+	                        android:textColor="#000000"
+	                        android:textSize="12sp" />
+	                </LinearLayout>
+	            </LinearLayout>
+	            
+	        </LinearLayout>
+	
+	    </LinearLayout>	    
+
+		<TextView
+		    android:id="@+id/sourceSessionDetails_textView"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_marginTop="15dp"
+		    android:paddingLeft="5dp"
+		    android:shadowColor="#ffffff"
+		    android:shadowDx="1"
+		    android:shadowDy="1"
+		    android:shadowRadius="1"
+		    android:text="SOURCE SESSION DETAILS (seed, number, offset)"
+		    android:textColor="#000000"
+		    android:textSize="14dp"
+		    android:textStyle="bold" />
+		
+		<TextView
+			android:id="@+id/sourceSessionDetails_content_textView"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginBottom="2dp"
+			android:layout_marginLeft="5dp"
+			android:layout_marginRight="5dp"
+			android:layout_marginTop="1dp"
+			android:background="#ffffff"
+			android:gravity="center_vertical"
+			android:paddingLeft="5dp"
+			android:paddingRight="5dp"
+			android:paddingTop="0dp"
+			android:lines="2"
+		    android:maxLines="2"
+			android:text="0"
+			android:textColor="#000000"
+			android:textSize="20dp"
+			android:textStyle="normal" />  	    
+	    	
+		<TextView
+		    android:id="@+id/semanticSessionDetails_textView"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_marginTop="15dp"
+		    android:paddingLeft="5dp"
+		    android:shadowColor="#ffffff"
+		    android:shadowDx="1"
+		    android:shadowDy="1"
+		    android:shadowRadius="1"		    
+		    android:text="SEMANTIC SESSION DETAILS (seed, number, offset)"
+		    android:textColor="#000000"
+		    android:textSize="14dp"
+		    android:textStyle="bold" />
+		
+		<TextView
+			android:id="@+id/semanticSessionDetails_content_textView"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginBottom="2dp"
+			android:layout_marginLeft="5dp"
+			android:layout_marginRight="5dp"
+			android:layout_marginTop="1dp"
+			android:background="#ffffff"
+			android:gravity="center_vertical"
+			android:paddingLeft="5dp"
+			android:paddingRight="5dp"
+			android:paddingTop="0dp"
+			android:lines="2"
+		    android:maxLines="2"			
+			android:text="0"
+			android:textColor="#000000"
+			android:textSize="16dp"
+			android:textStyle="normal" />  
+			
+		<TextView
+		    android:id="@+id/actualCoords_textView"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_marginTop="15dp"
+		    android:paddingLeft="5dp"
+		    android:shadowColor="#ffffff"
+		    android:shadowDx="1"
+		    android:shadowDy="1"
+		    android:shadowRadius="1"
+		    android:text="CURRENT POSITION (LAT, LNG)"
+		    android:textColor="#000000"
+		    android:textSize="14dp"
+		    android:textStyle="bold" />
+		
+		<TextView
+			android:id="@+id/actualCoords_content_textView"
+			android:layout_width="match_parent"
+			android:layout_height="30dp"
+			android:layout_marginBottom="2dp"
+			android:layout_marginLeft="5dp"
+			android:layout_marginRight="5dp"
+			android:layout_marginTop="1dp"
+			android:background="#ffffff"
+			android:gravity="center_vertical"
+			android:paddingLeft="5dp"
+			android:paddingRight="5dp"
+			android:paddingTop="0dp"
+			android:text="0"
+			android:textColor="#000000"
+			android:textSize="20dp"
+			android:textStyle="normal" /> 	
+			
+		<TextView
+		    android:id="@+id/sensor_infos_textView"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_marginTop="15dp"
+		    android:paddingLeft="5dp"
+		    android:shadowColor="#ffffff"
+		    android:shadowDx="1"
+		    android:shadowDy="1"
+		    android:shadowRadius="1"
+		    android:text="SENSOR-BOX INFORMATIONS"
+		    android:textColor="#000000"
+		    android:textSize="14dp"
+		    android:textStyle="bold" />
+	
+		<TextView
+			android:id="@+id/info_content_textView"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginBottom="2dp"
+			android:layout_marginLeft="5dp"
+			android:layout_marginRight="5dp"
+			android:layout_marginTop="1dp"
+			android:background="#ffffff"
+			android:gravity="top"
+			android:inputType="textCapSentences|textMultiLine"
+			android:maxLines="16"
+			android:padding="5dp"
+			android:scrollHorizontally="false"
+			android:scrollbars="vertical"
+			android:singleLine="false"
+			android:text="unknown"
+			android:textColor="#000000"
+			android:textSize="20dp"
+			android:textStyle="normal" />	
+			
+		<TextView
+		    android:id="@+id/cityname_textView"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_marginTop="15dp"
+		    android:paddingLeft="5dp"
+		    android:shadowColor="#ffffff"
+		    android:shadowDx="1"
+		    android:shadowDy="1"
+		    android:shadowRadius="1"
+		    android:text="BC MODEL PARAMS CITY NAME"
+		    android:textColor="#000000"
+		    android:textSize="14dp"
+		    android:textStyle="bold" />
+		
+		<TextView
+			android:id="@+id/cityname_content_textView"
+			android:layout_width="match_parent"
+			android:layout_height="30dp"
+			android:layout_marginBottom="2dp"
+			android:layout_marginLeft="5dp"
+			android:layout_marginRight="5dp"
+			android:layout_marginTop="1dp"
+			android:background="#ffffff"
+			android:gravity="center_vertical"
+			android:paddingLeft="5dp"
+			android:paddingRight="5dp"
+			android:paddingTop="0dp"
+			android:text=""
+			android:textColor="#000000"
+			android:textSize="20dp"
+			android:textStyle="normal" /> 
+			
+		<TextView
+		    android:id="@+id/phone_gps_override_tv"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_marginTop="15dp"
+		    android:paddingLeft="5dp"
+		    android:shadowColor="#ffffff"
+		    android:shadowDx="1"
+		    android:shadowDy="1"
+		    android:shadowRadius="1"
+		    android:text="PHONE GPS OVERRIDE MODE"
+		    android:textColor="#000000"
+		    android:textSize="14dp"
+		    android:textStyle="bold" />
+		
+		<TextView
+		    android:id="@+id/phone_gps_override_content_tv"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_marginBottom="2dp"
+		    android:layout_marginLeft="5dp"
+		    android:layout_marginRight="5dp"
+		    android:layout_marginTop="1dp"
+		    android:background="#ffffff"
+		    android:gravity="center_vertical"
+		    android:lines="2"
+		    android:maxLines="2"
+		    android:paddingLeft="5dp"
+		    android:paddingRight="5dp"
+		    android:paddingTop="0dp"
+		    android:text="0"
+		    android:textColor="#000000"
+		    android:textSize="20dp"
+		    android:textStyle="normal" />
+		
+		<TextView
+		    android:id="@+id/uid_md5_textView"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_marginTop="15dp"
+		    android:paddingLeft="5dp"
+		    android:shadowColor="#ffffff"
+		    android:shadowDx="1"
+		    android:shadowDy="1"
+		    android:shadowRadius="1"
+		    android:text="MD5 UNIQUE DEVICE IDENTIFIER"
+		    android:textColor="#000000"
+		    android:textSize="14dp"
+		    android:textStyle="bold" />
+		
+		<TextView
+		    android:id="@+id/uid_md5_content_textView"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_marginBottom="2dp"
+		    android:layout_marginLeft="5dp"
+		    android:layout_marginRight="5dp"
+		    android:layout_marginTop="1dp"
+		    android:background="#ffffff"
+		    android:gravity="center_vertical"
+		    android:lines="2"
+		    android:maxLines="2"
+		    android:paddingLeft="5dp"
+		    android:paddingRight="5dp"
+		    android:paddingTop="0dp"
+		    android:text="0"
+		    android:textColor="#000000"
+		    android:textSize="20dp"
+		    android:textStyle="normal" />		
+		
+	</LinearLayout>
+    
+</ScrollView>
