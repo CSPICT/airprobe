@@ -9,3 +9,4 @@ This program includes the following programs licensed
 by third parties under the terms of the Apache License version 2.0:
   achartengine (available at <http://code.google.com/p/achartengine/>)
   Twitter4j (available at <http://twitter4j.org/en/index.html>)
+  
